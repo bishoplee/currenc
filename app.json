@@ -8,6 +8,13 @@
       "expo-router"
     ],
     "name": "currenc",
-    "slug": "currenc"
+    "slug": "currenc",
+    "description": "",
+    "owner": "bishoplee0412",
+    "primaryColor": "#cf4647",
+    "orientation": "portrait",
+    "androidNavigationBar": {
+      "backgroundColor": ""
+    }
   }
 }
