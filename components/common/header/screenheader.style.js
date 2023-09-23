@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   logoImage: {
     width: 48,
     height: 48,
-    marginRight: 8,
+    marginLeft: -12,
     resizeMode: "contain",
   },
   logoText: {
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontFamily: FONT.ssLight,
     fontSize: SIZES.medium - 2,
-    letterSpacing: 1
+    letterSpacing: 0.75
   }
 });
 

@@ -8,56 +8,61 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.primary,
   },
-  searchContainer: {
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "row",
-    marginTop: SIZES.large,
-    height: 50,
-  },
-  searchWrapper: {
+  currecyValueWrapper: {
     flex: 1,
-    backgroundColor: COLORS.white,
-    marginRight: SIZES.small,
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: SIZES.medium,
-    height: "100%",
-  },
-  searchInput: {
-    fontFamily: FONT.regular,
     width: "100%",
-    height: "100%",
-    paddingHorizontal: SIZES.medium,
-  },
-  searchBtn: {
-    width: 50,
-    height: "100%",
-    backgroundColor: COLORS.tertiary,
-    borderRadius: SIZES.medium,
-    justifyContent: "center",
     alignItems: "center",
+    justifyContent: "flex-start",
+    paddingTop: "30%"
   },
-  searchBtnImage: {
-    width: "50%",
-    height: "50%",
-    tintColor: COLORS.white,
+  currencyValue: {
+    fontFamily: FONT.esXLight,
+    fontSize: 56,
+    color: COLORS.secondary
   },
-  tabsContainer: {
-    width: "100%",
-    marginTop: SIZES.medium,
+  currencyShortName: {
+    fontSize: 13,
+    fontFamily: FONT.esLight,
+    color: COLORS.secondary,
+    letterSpacing: 1
   },
-  tab: (activeJobType, item) => ({
-    paddingVertical: SIZES.small / 2,
-    paddingHorizontal: SIZES.small,
-    borderRadius: SIZES.medium,
-    borderWidth: 1,
-    borderColor: activeJobType === item ? COLORS.secondary : COLORS.gray2,
-  }),
-  tabText: (activeJobType, item) => ({
-    fontFamily: FONT.medium,
-    color: activeJobType === item ? COLORS.secondary : COLORS.gray2,
-  }),
+  conversionInfo: {
+    fontFamily: FONT.esRegular,
+    fontSize: 13,
+    color: COLORS.gray,
+    letterSpacing: 2,
+    position: "absolute",
+    bottom: 72
+  },
+  currencyName: {
+    fontFamily: FONT.esLight,
+    fontSize: SIZES.medium,
+    color: COLORS.secondary,
+    letterSpacing: 1
+  },
+  currencyNamePickerWrapper: {
+    justifyContent: "center",
+    alignSelf: "center",
+    alignItems: "center",
+    width: "70%",
+    height: 48,
+    borderRadius: 24,
+    borderWidth: 2,
+    borderColor: COLORS.secondary,
+    position: "absolute",
+    bottom: 16,
+  },
+  caret: {
+    width: 6,
+    height: 6,
+    borderRightWidth: 2,
+    borderRightColor: COLORS.secondary,
+    borderBottomWidth: 2,
+    borderBottomColor: COLORS.secondary,
+    position: "absolute",
+    right: 24,
+    transform: [{rotate: '45deg'}]
+  }
 });
 
 export default styles;
